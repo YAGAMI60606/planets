@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>YAGAMI</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+  background: linear-gradient(#01012e, #240019);
+  background-color: #240019; 
+  height: 170vh;
+  font-family: system-ui;
+ }
+
+    nav{
+      color: #fff;
+      text-align: center;
+      padding: 0;
+      margin: 0 300px;
+      border: solid #00002eea ;
+      background-color:#0101253b ;
+      letter-spacing: 3px;
+    }
+    
+    
+    section{
+      background: url('stars1.png');
+      height: 155vh ;
+      display: flex;
+      justify-content: center ;
+      align-items: center;
+    }
+    ul{
+    
+      text-align: center;
+    }
+    ul:hover li a{
+      opacity: 0 ;
+    }
+    ul li{
+      list-style:none;
+      margin : 25px 0;
+    }
+    ul li a{
+      color: #fff;
+      text-decoration: none ;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      background: darkblue;
+      padding: 7px 20px;
+      border-radius: 20px;
+      display: inline-block;
+      text-transform: uppercase;
+      width: 120px;
+      transition:0.5s ;
+    }
+    ul li a:hover{
+      transform:scale(1.5);
+      background: darkmagenta;
+      opacity: 1;
+    }
+    ul li::after {
+      content: attr(data-text); 
+      color: #fff;
+      position: absolute;
+      left: 50%;
+      top:50%;
+      transform: translate(-50%,-50%) ;
+      font-size: 80px;
+      text-transform: uppercase;
+      font-weight: 900;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.5s;
+    }
+    ul li:hover:after{
+      opacity:0.5;
+      letter-spacing: 5px;
+    }
+    ul li::before{
+      content: ' ';
+      width: 180px;
+      height: 80px;
+      background: #fff;
+      position: absolute ;
+      left: 50%;
+      top:50%;
+      transform: translate(-50%,70%) ;
+      border-radius: 50%;
+      box-shadow: 0 0 80px orangered;
+      opacity:0;
+      transition: 0.5s;
+    }
+    ul li:hover::before{
+      opacity: 0.5;
+      width:80px;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <nav>
+    <h1>welcome to our site web</h1>
+    <h2>here you can have some ideas about planets</h2>
+  </nav>
+    
+  <section>
+    <ul>
+      
+      <li data-text="sun"><a href="index2.html">sun</a></li>
+      <br>
+      <li data-text="mercury" ><a href="index3.html">mercury</a></li>
+      <br>
+      <li data-text="venus" ><a href="venus.html">venus</a></li>
+      <br>
+      <li data-text="earth" ><a href="earth.html">earth</a></li>
+      <br>
+      <li data-text="mars" ><a href="mars.html">mars</a></li>
+      <br>
+      <li data-text="jupiter" ><a href="jupiter.html">jupiter</a></li>
+      <br>
+      <li data-text="saturn" ><a href="saturn.html">saturn</a></li>
+      <br>
+      <li data-text="uranus" ><a href="uranus.html">uranus</a></li>
+      <br>
+      <li data-text="neptune" ><a href="nepturne.html">neptune</a></li>
+    </ul>
+  </section>
+  
+</body>
+
+</html>
